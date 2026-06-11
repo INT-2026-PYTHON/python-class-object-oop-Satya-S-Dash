@@ -104,7 +104,7 @@ class Counter:
             self.count = 0
 
         def __str__(self):
-            return self.name + ": count=" + str(self.count)
+            return f"{self.name}: count={self.count}"
         
         def count_total():
             return Counter.total

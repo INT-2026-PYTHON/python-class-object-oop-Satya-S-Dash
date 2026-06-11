@@ -116,8 +116,7 @@ class BankAccount:
       return self.balance
 
     def __str__(self):
-       return "Account[" + self.acc_number + " - " + self.name + "]: $" + str(self.balance)
-
+       return f"Account[{self.acc_number} - {self.name}] : Rs.{self.balance}"
 
 if __name__ == "__main__":
   a1 = BankAccount("Alice", "001", 500)
