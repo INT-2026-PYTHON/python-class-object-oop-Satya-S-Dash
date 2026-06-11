@@ -119,15 +119,16 @@ class BankAccount:
        return "Account[" + self.acc_number + " - " + self.name + "]: $" + str(self.balance)
 
 
-a1 = BankAccount("Alice", "001", 500)
-a2 = BankAccount("Bob", "002",)
+if __name__ == "__main__":
+  a1 = BankAccount("Alice", "001", 500)
+  a2 = BankAccount("Bob", "002",)
 
-a1.deposit(200)
-a1.withdraw(100)
-a1.withdraw(2000)
+  a1.deposit(200)
+  a1.withdraw(100)
+  a1.withdraw(2000)
 
-a2.deposit(-50)
-a2.deposit(300)
+  a2.deposit(-50)
+  a2.deposit(300)
 
-print(a1)
-print(a2)          
+  print(a1)
+  print(a2)          

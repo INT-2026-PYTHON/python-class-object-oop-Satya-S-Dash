@@ -105,28 +105,28 @@ class Counter:
 
         def __str__(self):
             return self.name + ": count=" + str(self.count)
-
-        @staticmethod 
+        
         def count_total():
             return Counter.total
           
 
-c1 = Counter("clicks")
-c2 = Counter("views")
-c3 = Counter("downloads")
+if __name__ == "__main__":
+  c1 = Counter("clicks")
+  c2 = Counter("views")
+  c3 = Counter("downloads")
 
-for i in range(3):
+  for i in range(3):
     c1.increment()
 
-for i in range(5):
+  for i in range(5):
     c2.increment()
 
-c3.increment(10)
+  c3.increment(10)  
 
-c1.reset()
+  c1.reset()
 
-print(c1)
-print(c2)
-print(c3)
+  print(c1)
+  print(c2)
+  print(c3)
 
-print("Total across all counters:", Counter.count_total())          
+  print("Total across all counters:", Counter.count_total())          

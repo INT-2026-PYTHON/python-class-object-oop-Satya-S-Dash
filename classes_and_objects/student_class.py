@@ -125,15 +125,16 @@ class Student:
               self.grade())   
 
 
-s1 = Student("Alice", 101)
+if __name__ == "__main__":
+  s1 = Student("Alice", 101)
 
-for i in [90, 85, 95]:
+  for i in [90, 85, 95]:
     s1.add_mark(i)
 
-s2 = Student("Bob", 102)
+  s2 = Student("Bob", 102)
 
-for i in [40, 55, 60]:
+  for i in [40, 55, 60]:
     s2.add_mark(i)
 
-print(s1.report())
-print(s2.report()) 
+  print(s1.report())
+  print(s2.report()) 
